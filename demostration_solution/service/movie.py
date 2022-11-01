@@ -1,4 +1,4 @@
-from dao.movie import MovieDAO
+from demostration_solution.dao.movie import MovieDAO
 
 
 class MovieService:
@@ -34,6 +34,8 @@ class MovieService:
         if "director_id" in movie_d:
             movie.director_id = movie_d.get("director_id")
         self.dao.update(movie)
+
+        return movie
 
     def delete(self, rid):
         self.dao.delete(rid)

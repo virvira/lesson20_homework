@@ -1,4 +1,4 @@
-from dao.model.movie import Movie
+from demostration_solution.dao.model.movie import Movie
 
 
 class MovieDAO:
@@ -34,3 +34,5 @@ class MovieDAO:
 
         self.session.add(movie)
         self.session.commit()
+
+        return movie
